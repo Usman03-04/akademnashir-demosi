@@ -4,13 +4,24 @@ body{
   font-size: 16px;
   line-height: 150%
 }
-
+/* site header */
 .site-header{
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: #ffff;
 
+}
+
+.logo{
+  transition:opacity 0.4s ease;
+}
+.logo :hover{
+opacity: 0.8;
+}
+
+.logo:active{
+  opacity:0.6;
 }
 
 .site-header-right{
@@ -35,8 +46,17 @@ display: flex;
   text-decoration: none;
 
   color: #000000;
+  transition: color 0.2s ease, opacity 0.4s ease;
 }
 
+.sitenav-link:hover{
+  color:#FF7500
+}
+
+.sitenav-link:active{
+  opacity: 0.6;
+
+}
 .main-link{
   font-family: 'Roboto';
   font-style: normal;
@@ -50,8 +70,19 @@ display: flex;
 
   background: #FF7500;
   color: #FFFFFF;
-
+  transition: opacity 0.4s ease;
 }
+
+
+.main-link:hover{
+  opacity: 0.8;
+}
+
+.main-link:active{
+  opacity: 0.6;
+}
+
+
 .hero{
   background: #252420;
   color: #FFFFFF;
@@ -88,6 +119,8 @@ line-height: 150%;
 letter-spacing: 0.5px;
 
 }
+
+/* Featurres */
 .features-heading{
   font-family:'Roboto Condensed' ;
   font-size: 72px;
@@ -189,6 +222,14 @@ object-fit: cover;
   justify-content: space-between;
 }
 
+.filter-green:hover{
+  filter: invert(69%) sepia(65%) saturate(6100%) hue-rotate(1deg) brightness(103%) contrast(106%);
+}
+
+.filter-green:active{
+  opacity: 0.6;
+}
+
 .site-footer-devider{
   background: rgba(37, 36, 32, 0.5);
   height: 2px;
@@ -206,4 +247,11 @@ object-fit: cover;
   line-height: 19px;
   text-decoration: none;
 color: #242520;
+}
+
+.site-footer-links a:hover{
+  color: #FF7500;
+}
+.site-footer-links a:focus{
+  opacity: 0.6;
 }
