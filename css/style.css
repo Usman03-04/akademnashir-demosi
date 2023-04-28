@@ -1,4 +1,10 @@
+*{
+  box-sizing: border-box;
+}
+
 body{
+  padding: 0;
+  margin: 0;
   font-family: 'Roboto';
   font-weight: 400;
   font-size: 16px;
@@ -8,17 +14,34 @@ body{
 *:focus{
   outline: 2px dotted orange;
   outline-offset: 3px;
+
+
+}
+
+/* Container */
+
+.container{
+width: 100%;
+max-width: 1140px;
+padding-left: 20px;
+padding-right: 20px;
+margin-left: auto;
+margin-right: auto;
 }
 /* site header */
 .site-header{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+
   border-top: 5px solid #FF7500;
   padding-top: 16px;
   padding-bottom: 16px;
   background-color: #ffff;
 
+}
+
+.site-header-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo{
@@ -109,9 +132,13 @@ display: flex;
   padding-bottom: 80px;
   background: #252420;
   color: #FFFFFF;
+
+}
+
+.hero-container{
   display: flex;
- align-items: center;
- justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
 .hero-content{
   width: 387px;
@@ -192,6 +219,7 @@ margin-right: 40px;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  margin-bottom: 32px;
   width: 100px;
   height: 100px;
   background-color: rgba(255, 117, 0, 0.2);
@@ -200,12 +228,15 @@ margin-right: 40px;
 
 
 .feature-title{
+  margin-top: 0;
+  margin-bottom: 12px;
   font-family:'Roboto Condensed' ;
   font-size: 24px;
   line-height: 120%;
   letter-spacing: 1.2;
 }
 .feature-info{
+  margin: 0;
   font-family: 'Roboto';
   font-weight: 400;
   font-size: 16px;
@@ -215,13 +246,20 @@ margin-right: 40px;
 
 
 .promo{
+padding-top: 120px;
+padding-bottom: 160px;
+
+
+}
+
+.inner-container{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgba(37, 36, 32, 1);
   color: #ffff;
+  padding: 64px;
+  background-color: rgba(37, 36, 32, 1);
   border-radius: 12px;
-
 }
 .promo-content{
   width: 440px;
@@ -329,6 +367,13 @@ img.filter-green{
 
 }
 
+.site-footer-links li{
+  margin-bottom: 16px;
+
+}
+.site-footer-links li:last-child{
+  margin-bottom: 0;
+}
 .site-footer-links:last-child{
   margin-right: 0;
 }
