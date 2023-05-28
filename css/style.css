@@ -1,18 +1,36 @@
-*{
+:root{
+--accent-color:#FF7500;
+--text-font:'Roboto', Arial, sans-serif;
+--heading-font:'Roboto Condensed' 'Roboto', Arial, sans-serif;
+}
+
+html{
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+*
+*::before,
+*::after{
+box-sizing: inherit;
 }
 
 body{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   padding: 0;
   margin: 0;
-  font-family: 'Roboto';
+  font-family: var(--text-font);
   font-weight: 400;
   font-size: 16px;
+  color: #000;
   line-height: 150%
 }
 
 *:focus{
-  outline: 2px dotted orange;
+  outline: 2px dotted var(--accent-color);
   outline-offset: 3px;
 
 
@@ -31,7 +49,7 @@ margin-right: auto;
 /* site header */
 .site-header{
 
-  border-top: 5px solid #FF7500;
+  border-top: 5px solid var(--accent-color);
   padding-top: 16px;
   padding-bottom: 16px;
   background-color: #ffff;
@@ -79,7 +97,7 @@ display: flex;
 }
 
 .sitenav-link{
-  font-family: 'Roboto';
+  font-family: var(--heading-font);
   font-style: normal;
   font-weight: 800;
   font-size: 13px;
@@ -93,7 +111,7 @@ display: flex;
 }
 
 .sitenav-link:hover{
-  color:#FF7500
+  color:var(--accent-color)
 }
 
 .sitenav-link:active{
@@ -103,7 +121,7 @@ display: flex;
 .main-link{
   display: inline-block;
   border-radius: 4px;
-  font-family: 'Roboto';
+  font-family: var(--heading-font);
   font-style: normal;
   font-weight: 700;
   font-size: 13px;
@@ -112,7 +130,7 @@ display: flex;
   padding: 12px 24px;
   text-decoration: none;
 
-  background: #FF7500;
+  background: var(--accent-color);
   color: #FFFFFF;
   transition: opacity 0.4s ease;
 }
@@ -149,7 +167,7 @@ display: flex;
   margin-bottom: 40px;
   width: 80px;
   height: 3px;
-  background: #FF7500;
+  background: var(--accent-color);
   }
 
 .hero-heading{
@@ -237,7 +255,7 @@ margin-right: 40px;
 }
 .feature-info{
   margin: 0;
-  font-family: 'Roboto';
+  font-family: var(--heading-font);
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
@@ -285,9 +303,9 @@ color: #FFFFFF;
 }
 
 .promo-highlite{
-font-family: 'Roboto';
+font-family: var(--heading-font);
 font-size: 700;
-color:#FF7500 ;
+color:var(--accent-color) ;
 }
 
 .promo-img{
@@ -379,7 +397,7 @@ img.filter-green{
 }
 
 .site-footer-links a{
-  font-family: 'Roboto';
+  font-family: var(--heading-font);
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -389,7 +407,7 @@ color: #242520;
 }
 
 .site-footer-links a:hover{
-  color: #FF7500;
+  color: var(--accent-color);
 }
 .site-footer-links a:active{
   opacity: 0.6;
